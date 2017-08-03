@@ -1,0 +1,67 @@
+<!-- menu, we did go with a static one, you can build a dynamic one, just google a little around -->
+<div class="main-menu">
+    <div class="content">
+        <nav id="menu">
+            <a class="toggle-link noline"><i class="fa fa-close fa-lg"></i></a>
+            <ul>
+              {% for page in site.pages %}
+                {% if page.nav-title and page.permalink %}
+                  <li>
+                    <a class="homelink" href="{{ site.baseurl | replace: '//', '/' }}/#{{ page.permalink | replace: '/', '' }}">
+                      {{ page.nav-title }}
+                    </a>
+                  </li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+        </nav>
+        <nav class="iconnav">
+            <ul>
+                {% unless site.tumblr == '' %}
+                <li class="social">
+                    <a target="_blank" href="{{ site.tumblr }}" class="tumblr"><i class="fa fa-tumblr"></i></a>
+                </li>
+                {% endunless %} {% unless site.pinterest == '' %}
+                <li class="social">
+                    <a target="_blank" href="{{ site.pinterest }}" class="pinterest"><i class="fa fa-pinterest"></i></a>
+                </li>
+                {% endunless %} {% unless site.instagram == '' %}
+                <li class="social">
+                    <a target="_blank" href="{{ site.instagram }}" class="instagram"><i class="fa fa-instagram"></i></a>
+                </li>
+                {% endunless %} {% unless site.twitter == '' %}
+                <li class="social">
+                    <a target="_blank" href="{{ site.twitter }}" class="twitter"><i class="fa fa-twitter"></i></a>
+                </li>
+                {% endunless %} {% unless site.facebook == '' %}
+                <li class="social">
+                    <a target="_blank" href="{{ site.facebook }}" class="facebook"><i class="fa fa-facebook"></i></a>
+                </li>
+                {% endunless %} {% unless site.github == '' %}
+                <li class="social">
+                    <a target="_blank" href="{{ site.github }}" class="github"><i class="fa fa-github"></i></a>
+                </li>
+                {% endunless %} {% unless site.youtube == '' %}
+                <li class="social">
+                    <a target="_blank" href="{{ site.youtube }}" class="youtube"><i class="fa fa-youtube"></i></a>
+                </li>
+                {% endunless %} {% unless site.vimeo == '' %}
+                <li class="social">
+                    <a target="_blank" href="{{ site.vimeo }}" class="vimeo"><i class="fa fa-vimeo-square"></i></a>
+                </li>
+                {% endunless %} {% unless site.soundcloud == '' %}
+                <li class="social">
+                    <a target="_blank" href="{{ site.soundcloud }}" class="soundcloud"><i class="fa fa-soundcloud"></i></a>
+                </li>
+                {% endunless %} {% unless site.email == '' %}
+                <li class="social">
+                    <a href="mailto:{{ site.email }}" class="soundcloud"><i class="fa fa-envelope"></i></a>
+                </li>
+                {% endunless %}
+            </ul>
+        </nav>
+        <a href='#menu' class="toggle-link noline">
+            <i class="fa fa-navicon"></i>
+        </a>
+    </div>
+</div>

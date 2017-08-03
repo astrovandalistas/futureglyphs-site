@@ -1,0 +1,104 @@
+name: Narrativas hacia el futuro
+featimg: cover00.jpg
+
+url: http://astrovandalistas.cc
+baseurl: '/narrativas'
+port: 4443
+permalink: /:title/
+
+media_folder: /media
+destination: jekyllbuild
+full_rebuild: true
+gems: [jekyll-paginate]
+paginate: 8
+paginate_path: /page/:num/
+infinite_scroll: true #false for pagination
+
+tumblr: ""
+pinterest: ""
+github: "https://github.com/astrovandalistas"
+instagram: ""
+twitter: ""
+facebook: "https://www.facebook.com/Astrovandalistas-115153808562518/"
+youtube: ""
+vimeo: "https://vimeo.com/astrovandalistas"
+soundcloud: ""
+email: "somos@astrovandalistas.cc"
+
+encoding: utf-8
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "post"
+      type: "standard"
+      homedisplay: "featimg"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      type: "standard"
+      homedisplay: "featimg"
+
+# prose.io
+prose:
+  media: 'media'
+  ignore:
+    - .gitignore
+    - _config.yml
+    - _layouts
+    - _includes
+    - _sass
+    - css
+    - fonts
+    - js
+    - LICENCE
+    - CNAME
+    - README.md
+    - index.html
+    - media/favicons
+  metadata:
+    _pages:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "page"
+      - name: "homedisplay"
+        field:
+          element: "hidden"
+          value: "featimg"
+      - name: "published"
+        field:
+          element: "hidden"
+          value: "true"
+      - name: "title"
+        field:
+          element: "text"
+          label: "nome da página"
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "escolha um url para essa página"
+          placeholder: "/url-da-pagina/"
+      - name: "nav-title"
+        field:
+          element: "text"
+          label: "nome da página para o menu (deixar em branco se não quiser no menu)"
+      - name: "cover-image"
+        field:
+          element: "text"
+          label: "imagem de capa para a página (tem que ser .jpg por enquanto)"
+          placeholder: "horta2.jpg"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+relative_permalinks: false
+include: ['_pages']
+exclude: [.git, .gitignore, .sass-cache, README.md, jekyllbuild]

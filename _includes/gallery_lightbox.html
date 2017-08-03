@@ -1,0 +1,11 @@
+<!-- Gallery with lightbox -->
+<div class="masonry">
+  {% for file in site.static_files %}
+    {% if file.path contains 'gallery' %}
+      {% assign imgSrc = file.path | prepend: site.baseurl | replace: '//', '/' %}
+      <a href="{{ imgSrc }}" data-imagelightbox="f" class="noline">
+        <img src="{{ imgSrc }}" alt="{{ image.alttext }}">
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>

@@ -1,0 +1,18 @@
+<div class="logo-container">
+    {% assign thumb = site.featimg | replace: '.jpg', '' %}
+    {% assign imgSrc = site.media_folder | prepend: site.baseurl | replace: '//', '/' %}
+    {% assign imgSrc = imgSrc | append: '/' | append: thumb | append: '.jpg' %}
+    {% assign imgHeight = '' %}
+
+    {% if page.cover-image %}
+      {% assign thumb = page.cover-image | replace: '.jpg', '' %}
+      {% assign imgSrc = site.baseurl | append: '/' | append: site.media_folder %}
+      {% assign imgSrc = imgSrc | append: '/' | append: page.cover-image %}
+      {% assign imgSrc = imgSrc | replace: '//', '/' %}
+    {% endif %}
+    {% if page.permalink == '/' %}
+      <div class="page-home-cover-image" style="background-image: url({{ imgSrc }});">
+        <img src="{{ imgSrc }}" alt="{{ thumb }}">
+      </div>      
+    {% endif %}
+</div>

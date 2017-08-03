@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body class="index">
+   <header class="head">
+     {% include header.html %}
+     {% include nav.html %}
+    </header>
+    <div class="margin">
+      <div class="content index-content">
+        <div class="articles">
+          {% for post in site.posts %}
+            {% if post.title and post.cover-image %}
+              {% assign imgSrc = site.baseurl | append: '/' | append: site.media_folder %}
+              {% assign imgSrc = imgSrc | append: '/' | append: post.cover-image %}
+              {% assign imgSrc = imgSrc | replace: '//', '/' %}
+
+              <div class="page-home-item" id="{{ post.permalink | replace: '/', ''}}">
+                <p class="page-home-title">{{ post.title }}</p>
+                <div class="page-home-content">
+                  {{ post.content }}
+                </div>
+
+                <div class="page-home-cover-image" style="background-image: url({{ imgSrc }});">
+                  <img src="{{ imgSrc }}">
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    {% include footer.html %}
+  </body>
+</html>
