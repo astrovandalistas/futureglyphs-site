@@ -19,7 +19,7 @@
 .page-home-item, .page-content-container {
   width: 100%;
   font-size: 18px;
-  padding: 1em 0 0;
+  padding: 0;
 
   @media (min-width: 600px) {
     font-size: 20px;
@@ -44,6 +44,10 @@
 .page-home-content p {
   font: 300 0.9em $main-font;
   padding: 24px 5% 1em;
+}
+
+.page-home-content p:last-child {
+  padding-bottom: 48px;
 }
 
 .page-home-link {
