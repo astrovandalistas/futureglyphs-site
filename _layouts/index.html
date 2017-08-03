@@ -13,7 +13,7 @@
       <div class="content index-content">
         <div class="articles">
           {% for post in site.posts %}
-            {% if post.title and post.cover-image %}
+            {% if post.title %}
               {% assign imgSrc = site.baseurl | append: '/' | append: site.media_folder %}
               {% assign imgSrc = imgSrc | append: '/' | append: post.cover-image %}
               {% assign imgSrc = imgSrc | replace: '//', '/' %}
@@ -24,9 +24,11 @@
                   {{ post.content }}
                 </div>
 
+                {% if post.cover-image %}
                 <div class="page-home-cover-image" style="background-image: url({{ imgSrc }});">
                   <img src="{{ imgSrc }}">
                 </div>
+                {% endif %}
               </div>
             {% endif %}
           {% endfor %}

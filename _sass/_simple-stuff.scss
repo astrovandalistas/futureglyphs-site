@@ -17,6 +17,7 @@
 }
 
 .page-home-item, .page-content-container {
+  width: 100%;
   font-size: 18px;
   padding: 1em 0 0;
 
@@ -42,7 +43,7 @@
 
 .page-home-content p {
   font: 300 0.9em $main-font;
-  padding: 0 5% 1em;
+  padding: 24px 5% 1em;
 }
 
 .page-home-link {
@@ -60,3 +61,5 @@
     visibility: hidden;
   }
 }
+
+@import 'futureglyph';

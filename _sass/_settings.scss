@@ -54,12 +54,12 @@ $link-color: $dark-primary-color;
 // String Variables (use strings as values | for Font Variables: Don't forget to include the fonts)
 //------------------------------------------
 
-$main-font: 'Roboto Slab', sans-serif;
+$main-font: 'Lato', sans-serif;
 
 // set to $main-font if you don't want your headings to use another font
-$headings-font: 'Josefin Slab', sans-serif;
+$headings-font: 'Lato', sans-serif;
 
-$menu-font: 'Josefin Slab', sans-serif;
+$menu-font: 'Lato', sans-serif;
 
 // use values from text-transform [none|capitalize|uppercase|lowercase|initial|inherit]
 $headings-text-transform: none;
@@ -69,13 +69,13 @@ $code-font: monospace;
 // size variables (use numbers as values (units as indicated ))
 
 // font-weights, alternatively use: [light, normal, bold]
-$main-font-weight: 300;
+$main-font-weight: 100;
 
 // set $main-font-weight if you don't want your headings to use another font-weight
-$headings-font-weight: 400;
+$headings-font-weight: 100;
 
 // use px here
-$root-font-size: 17px;
+$root-font-size: 16px;
 
 // do not add a unit here
 $basic-line-height: 1.5;
@@ -162,7 +162,6 @@ $line: 1px solid rgba(160,160,160,.2);
 $sidebar-width: 320px;
 $margin-width: 30px;
 $material-sidebar-responsive-border-bg: $accent-color;
-
 
 // modals
 $modal-width-change: 900px;
