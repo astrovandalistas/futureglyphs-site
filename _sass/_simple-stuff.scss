@@ -16,6 +16,19 @@
   }
 }
 
+.page-home-content {
+  padding: 0;
+}
+
+.page-home-content p {
+  font: 300 0.9em $main-font;
+  padding: 24px 5% 1em;
+}
+
+.page-home-content p:last-child {
+  padding-bottom: 48px;
+}
+
 .page-home-item, .page-content-container {
   width: 100%;
   font-size: 18px;
@@ -32,22 +45,14 @@
   padding-bottom: 0;
 }
 
-.page-home-title, .page-title {
+.page-home-title, .page-title, .page-home-subtitle {
   font: 700 1.5em $headings-font;
   padding: 0 5%;
 }
 
-.page-home-content {
-  padding: 0;
-}
-
-.page-home-content p {
-  font: 300 0.9em $main-font;
-  padding: 24px 5% 1em;
-}
-
-.page-home-content p:last-child {
-  padding-bottom: 48px;
+.page-home-subtitle {
+  font: 700 1.1em $headings-font;
+  padding: 0 5%;
 }
 
 .page-home-link {
