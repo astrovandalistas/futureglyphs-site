@@ -4,7 +4,23 @@
 <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'/>
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,300i,900,900i|Lato:100, 300" rel="stylesheet">
 <link rel="stylesheet" href="{{ site.baseurl | replace: '//', '/' }}/css/main.css">
-<link rel="stylesheet" id="color-change" href="">
 <link rel="stylesheet" id="switch-style" href="{{ site.baseurl | replace: '//', '/' }}/css/grid.css">
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.baseurl | prepend: site.url | replace: '//', '/' }}/feed.xml">
 <link rel="shortcut icon" type="image/x-icon" href="{{ site.baseurl | replace: '//', '/' }}/media/favicons/favicon.ico">
+
+{% assign coverImagePath = site.url | append: site.baseurl | append: "/media/cover00.jpg" %}
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@astrovandalista">
+<meta name="twitter:title" content="Narrativas hacia el futuro">
+<meta name="twitter:description" content="Astrovandalistas - #futureglyphs">
+<meta name="twitter:creator" content="@astrovandalista">
+<meta name="twitter:image" content="{{ coverImagePath }}">
+
+<meta property="og:title" content="Narrativas hacia el futuro">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://departamentodereclamacoes.com/">
+<meta property="og:description" content="Astrovandalistas - #futureglyphs">
+<meta property="og:site_name" content="Narrativas hacia el futuro">
+<meta property="article:publisher" content="https://www.facebook.com/Astrovandalistas-115153808562518">
+<meta property="og:image" content="{{ coverImagePath }}">
