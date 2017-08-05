@@ -1,8 +1,8 @@
-name: Narrativas hacia el futuro
+name: Futureglyphs
 featimg: cover00.jpg
 
 url: http://astrovandalistas.cc
-baseurl: '/narrativas-site'
+baseurl: '/futureglyphs-site'
 port: 4443
 permalink: /:title/
 
