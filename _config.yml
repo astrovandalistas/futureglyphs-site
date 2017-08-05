@@ -2,7 +2,7 @@ name: Narrativas hacia el futuro
 featimg: cover00.jpg
 
 url: http://astrovandalistas.cc
-baseurl: ''
+baseurl: '/narrativas-site'
 port: 4443
 permalink: /:title/
 
