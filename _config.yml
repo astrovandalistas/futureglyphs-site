@@ -1,8 +1,8 @@
 name: Futureglyphs
 featimg: cover00.jpg
 
-url: http://astrovandalistas.cc
-baseurl: '/futureglyphs-site'
+url: http://futureglyphs.astrovandalistas.cc
+baseurl: ''
 port: 4443
 permalink: /:title/
 
