@@ -16,6 +16,6 @@ Part site-specific minimalist installation, part laboratory and workshop, this p
 
 <div class="video-wrapper-wrapper">
   <div class="video-wrapper video-wrapper-16x9">
-    <iframe src="https://player.vimeo.com/video/228727744?title=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <iframe src="https://player.vimeo.com/video/228727744?title=0&portrait=0&byline=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
 </div>
