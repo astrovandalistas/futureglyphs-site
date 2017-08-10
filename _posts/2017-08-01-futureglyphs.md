@@ -14,8 +14,6 @@ While working on the laser modem, we started to explore the possibility of using
 
 Part site-specific minimalist installation, part laboratory and workshop, this platform invites direct participation and creates an opportunity for manifesting anxieties about the future.
 
-<div class="video-wrapper-wrapper">
-  <div class="video-wrapper video-wrapper-16x9">
-    <iframe src="https://player.vimeo.com/video/228727744?title=0&portrait=0&byline=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  </div>
+<div class="video-wrapper video-wrapper-16x9">
+  <iframe src="https://player.vimeo.com/video/228727744?title=0&portrait=0&byline=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 </div>
